@@ -4,6 +4,8 @@ import Article from "./components/Article.vue";
 import Team from "./components/Team.vue";
 import Signin from "./components/Authentication/Signin.vue";
 import Signup from "./components/Authentication/Signup.vue";
+import Blogs from "./components/Blogs/Blogs.vue";
+import Specific from "./components/Blogs/Specific.vue";
 
 
 const routes = [
@@ -37,7 +39,20 @@ const routes = [
     component: Signup
     
   },
-  
+  {
+    path: "/blogs",
+    name: "Blogs",
+    component: Blogs
+    
+  },
+  {
+    path: "/blogs/specific",
+    name: "Specific",
+    components: {
+      default: Specific,
+      
+    },
+  },
 ];
 
 const router = createRouter({

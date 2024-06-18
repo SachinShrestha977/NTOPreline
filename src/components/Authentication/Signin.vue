@@ -1,6 +1,6 @@
 <template>
     <div class="dark:bg-gray-700 p-6">
-      <div class="md:flex min-h-screen border border-gray-500 rounded-lg">
+      <div class="md:flex min-h-screen border border-gray-300 rounded-lg">
         <!-- Image Section -->
         <div class="md:w-1/2 w-auto flex justify-center dark:bg-gray-500 items-center md:p-0 p-2">
           <img
@@ -10,7 +10,7 @@
         </div>
   
         <!-- Form Section -->
-        <div class="md:w-1/2 mr-8 mx-16 px-8 mb-8 mt-8 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-neutral-900 dark:border-neutral-700">
+        <div class="md:w-1/2 mr-8 mx-16 px-8 mb-8 mt-8 bg-white border border-gray-300 rounded-xl shadow-sm dark:bg-neutral-900 dark:border-neutral-700">
           <div class="p-4 sm:p-7">
             <div class="text-center">
               <img

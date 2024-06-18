@@ -1832,9 +1832,11 @@ About Us            </p>
           href="#"
           aria-current="page"
         >
+        <router-link to="/blogs">
           <p class="custom-underline">
            Blogs
           </p>
+        </router-link>
         </a>
 
         
