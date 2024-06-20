@@ -10,7 +10,7 @@
         </div>
   
         <!-- Form Section -->
-        <div class="md:w-1/2 mr-8 mx-16 px-8 mb-8 mt-8 bg-white border border-gray-300 rounded-xl shadow-sm dark:bg-neutral-900 dark:border-neutral-700">
+        <div class="md:w-1/2 mr-8 mx-16 px-8 mb-8 mt-8 bg-white border border-gray-300 rounded-xl shadow-sm dark:bg-gray-700 dark:border-neutral-700">
           <div class="p-4 sm:p-7">
             <div class="text-center">
               <img
@@ -32,7 +32,7 @@
             <div class="mt-5">
               <button
                 type="button"
-                class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
+                class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
                 @click="signInWithGoogle"
               >
                 <svg class="w-4 h-auto" width="46" height="47" viewBox="0 0 46 47" fill="none">
@@ -42,7 +42,7 @@
               </button>
               <button
                 type="button"
-                class="w-full mt-2 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
+                class="w-full mt-2 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
                 @click="signInWithFacebook"
               >
                 <svg
@@ -76,7 +76,7 @@
                       id="email"
                       v-model="email"
                       name="email"
-                      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                       required
                     />
                   </div>
@@ -96,7 +96,7 @@
                       id="password"
                       v-model="password"
                       name="password"
-                      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-600 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                       required
                     />
                   </div>
@@ -111,7 +111,7 @@
                       id="remember-me"
                       name="remember-me"
                       type="checkbox"
-                      class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                      class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-gray-600 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
                     />
                   </div>
                   <div class="ms-3">
@@ -171,6 +171,7 @@
         if (!this.emailError && !this.passwordError) {
           // Perform sign-in logic
           toast.success("Login Success");
+          localStorage.setItem("userText", "Login Text");
           setTimeout(() => {
             this.$router.push("/myProfile");
           }, 1000);

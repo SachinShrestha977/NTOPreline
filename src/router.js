@@ -6,7 +6,9 @@ import Signin from "./components/Authentication/Signin.vue";
 import Signup from "./components/Authentication/Signup.vue";
 import Blogs from "./components/Blogs/Blogs.vue";
 import Specific from "./components/Blogs/Specific.vue";
-
+import MyProfile from "./components/Profile/MyProfile.vue"
+import Account from "./components/Account/Account.vue";
+import Contact from "./components/Contacts.vue";
 
 const routes = [
   {
@@ -52,6 +54,24 @@ const routes = [
       default: Specific,
       
     },
+  },
+  {
+    path: "/myProfile",
+    name: "MyProfile",
+    component: MyProfile
+    
+  },
+  {
+    path: "/account",
+    name: "Account",
+    component: Account
+    
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact
+    
   },
 ];
 

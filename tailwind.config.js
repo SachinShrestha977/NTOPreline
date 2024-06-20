@@ -13,7 +13,7 @@ export default {
   darkMode: "class",
   theme: {
     fontFamily: {
-      sans: ["Noto Sans", "sans-serif"],
+      'public-sans': ['"Public Sans"', 'sans-serif'],
     },
     extend: {
       colors: {
