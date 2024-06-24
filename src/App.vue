@@ -18,8 +18,9 @@ onMounted(() => {
     <Header></Header>
 
 
-    <router-view></router-view>
-
+    <main class="pt-32">
+      <router-view></router-view>
+    </main>
     <Footer></Footer>
     <Footer2></Footer2>
     

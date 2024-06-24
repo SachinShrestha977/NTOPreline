@@ -397,6 +397,8 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere architecto repe
         <div class="w-full md:w-1/6"></div>
       </div>
     </div>
+
+    
   </template>
   
   <script>

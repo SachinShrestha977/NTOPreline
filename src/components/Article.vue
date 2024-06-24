@@ -2476,9 +2476,9 @@ export default {
           >
             <div class="">
               <ul
-                class="divide-y overflow-y-auto dark:text-white"
+                class="divide-y overflow-y-auto dark:text-white custom-scrollbar"
                 @click.prevent="handleAnchorClick"
-                style="max-height: 521px"
+                style="max-height: 657px"
               >
                 <li
                   v-for="post in posts"
@@ -2522,7 +2522,7 @@ export default {
               <ul
                 class="divide-y overflow-y-auto dark:text-white"
                 @click.prevent="handleAnchorClick"
-                style="max-height: 521px"
+                style="max-height: 657px"
               >
                 <li
                   v-for="post in posts"
@@ -2558,8 +2558,8 @@ export default {
 
           <!-- Second div with scrollable content -->
           <div
-            class="w-full dark:text-red-500 overflow-y-auto"
-            style="max-height: 521px"
+            class="w-full dark:text-red-500 overflow-y-auto custom-scrollbar"
+            style="max-height: 657px"
           >
             <div class="sticky top-0 z-10 bg-white dark:bg-gray-800">
               <vue3-tabs-chrome :tabs="tabs" v-model="activeTab" />
@@ -2739,5 +2739,32 @@ export default {
 .slide-enter-to,
 .slide-leave {
   transform: translateX(0%);
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #c8c8c8; /* Change this color to match your design */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #989898; /* Change this color for the hover state */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Change this color to match your design */
+  border-radius: 4px;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #374151; /* Change this color to match your design */
+  border-radius: 4px;
 }
 </style>
