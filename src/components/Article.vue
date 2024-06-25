@@ -559,7 +559,7 @@ export default {
 <template>
   <div class="contain mt-0 bg-gray-100 md:h-screen">
     <div
-      class="flex flex-wrap border border-slate-200 bg-white dark:border-slate-800 dark:bg-gray-700 lg:flex-nowrap md:h-screen"
+      class="flex flex-wrap border border-slate-200 bg-white dark:border-slate-800 dark:bg-neutral-900 lg:flex-nowrap md:h-screen"
     >
       <!-- Left Column Big Screen -->
 
@@ -925,7 +925,7 @@ export default {
         <!-- Navbar -->
         <header class="from-theme-1 to-theme-2 group/mainmenu">
           <nav
-            class="bg-white border-gray-200 dark:bg-gray-700 dark:border-gray-600 border-y"
+            class="bg-white border-gray-200 dark:bg-neutral-900 dark:border-gray-600 border-y"
           >
             <div class="grid py-1 px-2 lg:grid-cols-2">
               <div class="md:flex hidden items-center">
